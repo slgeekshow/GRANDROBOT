@@ -26,7 +26,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**Hello {}, My Name is {}!** 
+**Hello {}, My Name is {හොර පුසා}!** 
 I am an **advance**  group management bot.
 You can find the list of available commands with /help.
 
@@ -34,9 +34,9 @@ You can find the list of available commands with /help.
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hello! my name *{හොර පුසා}*.
 
-*Main* commands available:
+*Main ✍️* commands available:
  - /start: start the bot
  - /help: PM's you this message.
  - /help <module name>: PM's you info about that module.
@@ -49,7 +49,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = " https://telegra.ph/file/bd9ff2dcd9f7f0afffeba.jpg"
+TECHNO_IMG = "https://telegra.ph/file/8495824603f197a4f8053.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -146,11 +146,11 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                    [InlineKeyboardButton(text="ADD ME TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/LEGENDXOP/GRANDROBOT")
+                                                                       url="https://github.com/slgeekshow/GRANDROBOT/pull/1")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text(" I am Already ONline")
+        update.effective_message.reply_text(" I am Already Onine")
 
 
 def send_start(bot, update):
